@@ -2,7 +2,6 @@
 타이타닉 ML 서비스 MAS SpringBoot API
 ![LGTM](https://i.lgtm.fun/2j9q.gif)
 
-
 # Architecture
 <img width="841" alt="architect" src="https://github.com/jungssg/titanic/assets/131239981/8bb39af3-79e3-4894-9d81-d9998cc629de">
 

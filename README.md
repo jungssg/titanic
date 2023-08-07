@@ -29,9 +29,26 @@
 # DEPLOY
 - fly.io + docker
 ```
+$ fly login
 # Create and configure a new app from source code or a Docker image.
 $ fly launch
+$ fly deploy
 ```
+# DOCKER
+```
+$ docker build -t titanic-user-api-0.0.1.jar .
+$ docker images titanic-user-api-0.0.1.jar
+REPOSITORY                   TAG       IMAGE ID       CREATED          SIZE
+titanic-user-api-0.0.1.jar   latest    375a99fea939   22 minutes ago   494MB
+
+$ docker run --name titanic-api -p 8090:8090 titanic-user-api-0.0.1.jar
+
+$ docker ps
+CONTAINER ID   IMAGE                        COMMAND                CREATED          STATUS         PORTS                    NAMES
+996f49a82075   titanic-user-api-0.0.1.jar   "java -jar /app.jar"   21 minutes ago   Up 6 seconds   0.0.0.0:8090->8090/tcp   titanic-api
+```
+
+
 
 ### reference
 - https://spring.io/guides/topicals/spring-boot-docker/

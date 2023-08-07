@@ -21,5 +21,17 @@
 ### package
 - gradle bootJar
 
+### package & run
+- gradle bootJar
+- java -jar build/libs/titanic-user-api-0.0.1.jar
+
 # DEPLOY
 - fly.io + docker
+```
+# Create and configure a new app from source code or a Docker image.
+$ fly launch
+```
+
+### reference
+- https://spring.io/guides/topicals/spring-boot-docker/
+

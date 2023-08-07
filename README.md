@@ -1,5 +1,6 @@
 # titanic
 타이타닉 ML 서비스 MAS SpringBoot API
+![LGTM](https://i.lgtm.fun/2j9q.gif)
 
 
 # Architecture
